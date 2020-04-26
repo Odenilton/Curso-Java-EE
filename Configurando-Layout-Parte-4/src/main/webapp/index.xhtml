@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	<h:head>
+		<title>Welcome</title>
+		<h:outputStylesheet library="css" name="estilo.css" />
+		<h:outputStylesheet library="css" name="icofont.css" />
+		<h:outputStylesheet library="css" name="bootstrap.min.css" />
+	</h:head>
+
+	<h:body>
+		<header class="header">
+			<div class="logo">
+				<i class="icofont-read-book-alt"></i>
+				<span>SiS Book</span>
+			</div>
+		</header>
+		<aside class="sidebar">
+			<nav class="menu mt-3">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<i class="icofont-database-add"></i>
+						<a href="#">Cadastros</a>
+					</li>
+					<li class="nav-item">
+						<i class="icofont-ebook"></i>
+						<a href="#">Empréstimos</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="content">
+			<div class="content-title mb-4">
+				<i class="icon icofont-ebook"></i>
+				<div>
+					<h1>Livros</h1>
+					<h2>Pesquisa</h2>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h5 class="card-title">Informe um dos campos abaixo</h5>
+    				<h6 class="card-subtitle mb-2 text-muted">para pesquisar</h6>
+				</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-3">
+							<div class="form-group">
+							    <label for="isbn">ISBN</label>
+							    <input type="text" class="form-control" 
+								    id="isbn" placeholder="Isbn" />
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+							    <label for="titulo">Título</label>
+							    <input type="text" class="form-control" 
+								    id="titulo" placeholder="Título" />
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="form-group">
+							    <label for="autor">Autor</label>
+							    <input type="text" class="form-control" 
+								    id="autor" placeholder="Autor" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<button type="submit" class="btn btn-primary">
+						<i class="icofont-search-document"></i> Pesquisar
+					</button>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<span>Desenvolvido com</span>
+			<span><i class="icofont-heart text-danger"></i></span>
+			<span>por Odenilton <span class="text-danger">Lima</span></span>
+		</footer>
+	</h:body>
+
+</html>
