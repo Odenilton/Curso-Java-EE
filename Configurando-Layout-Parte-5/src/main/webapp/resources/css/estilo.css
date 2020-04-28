@@ -1,0 +1,124 @@
+body {
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 60px 1fr 40px;
+	grid-template-areas: 
+		"header header"
+		"sidebar content"
+		"sidebar footer";
+	margin: 0;
+	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #DDD;
+}
+
+header.header {
+	display: flex;
+	z-index: 10;
+	box-shadow:
+		0 2px 4px -1px rgba(0, 0, 0, .2),
+		0 4px 4px 0px rgba(0, 0, 0, .14),
+		0 1px 10px -1px rgba(0, 0, 0, .12);
+	grid-area: header;
+	background-color: #1976D2;
+}
+
+header.header .logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	font-size: 1.4rem;
+	flex-basis: 250px;
+	background-color: #1976D2;
+}
+
+aside.sidebar {
+	grid-area: sidebar;
+	background-color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: -5px 0px 25px 1px rgba(0, 0, 0, 0.4);
+}
+
+aside.sidebar .menu {
+	width: 100%;
+	flex-grow: 1;
+}
+
+aside.sidebar .menu ul.nav-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+aside.sidebar .menu li.nav-item {
+	margin: 0;
+	padding: 10px 10px 10px 25px;
+}
+
+aside.sidebar .menu li.nav-item:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+aside.sidebar .menu li.nav-item a {
+	font-size: 0.9rem;
+	color: #555;
+	text-decoration: none;
+}
+
+main.content {
+	grid-area: content;
+	background-color: #FFF;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2)
+}
+
+main.content .content-title {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+main.content .content-title .icon {
+	font-size: 2rem;
+}
+
+main.content .content-title h1 {
+	color: #444;
+	font-weight: 300;
+	margin: 0;
+	font-size: 1.4rem;
+}
+
+main.content .content-title h2 {
+	color: #888;
+	font-weight: 300;
+	margin: 0;
+	font-size: 1.0rem;
+}
+
+footer.footer {
+	grid-area: footer;
+	background-color: #222;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 20px;
+	font-size: 1.1rem;
+	color: #FFF;	
+}
+
+
+
+
+
+
+
+
+
+

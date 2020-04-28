@@ -1,0 +1,48 @@
+<ui:composition template="/WEB-INF/layout/masterPage.xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:define name="conteudo">
+		<div class="content-title mb-4">
+			<i class="icon icofont-ebook"></i>
+			<div>
+				<h1>Livros</h1>
+				<h2>Pesquisa</h2>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<h5 class="card-title">Informe um dos campos abaixo</h5>
+				<h6 class="card-subtitle mb-2 text-muted">para pesquisar</h6>
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-3">
+						<div class="form-group">
+							<label for="isbn">ISBN</label> <input type="text"
+								class="form-control" id="isbn" placeholder="Isbn" />
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label for="titulo">Título</label> <input type="text"
+								class="form-control" id="titulo" placeholder="Título" />
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="form-group">
+							<label for="autor">Autor</label> <input type="text"
+								class="form-control" id="autor" placeholder="Autor" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer">
+				<button type="submit" class="btn btn-primary">
+					<i class="icofont-search-document"></i> Pesquisar
+				</button>
+			</div>
+		</div>
+	</ui:define>
+
+</ui:composition>
